@@ -35,8 +35,7 @@ export class AppTimerComponent {
       return;
 
     var millisDiff = new Date().getTime() - this.startTime.getTime();
-    millisDiff *= 10;
-    // var mi = millisDiff % 1000;
+
     var s = (millisDiff - millisDiff % 1000) / 1000;
     var m = (s - s % 60) / 60
     var h = (m - m % 60) / 60
