@@ -1,4 +1,4 @@
-const VERSION = "v2";
+const VERSION = "v3";
 const CACHE_NAME = `periodic-timer-${VERSION}`;
 
 const APP_STATIC_RESOURCES = [
