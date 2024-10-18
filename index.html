@@ -6,8 +6,23 @@
   <base href="https://saadati944.github.io/PeriodicTimer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="/PeriodicTimer/egg-timer.svg">
-<link rel="stylesheet" href="/PeriodicTimer/styles-5INURTSO.css"></head>
+  <link rel="stylesheet" href="/PeriodicTimer/styles-5INURTSO.css"></head>
+  <link rel="manifest" href="/PeriodicTimer/manifest.json" />
 <body>
   <app-root></app-root>
 <script src="/PeriodicTimer/polyfills-FFHMD2TL.js" type="module"></script><script src="/PeriodicTimer/main-K6QN3SFL.js" type="module"></script></body>
 </html>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js").then(
+      (registration) => {
+        console.log("Service worker registration successful:", registration);
+      },
+      (error) => {
+        console.error(`Service worker registration failed: ${error}`);
+      }
+    );
+  } else {
+    console.error("Service workers are not supported.");
+  }
+</script>

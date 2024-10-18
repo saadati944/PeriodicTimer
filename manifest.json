@@ -1,0 +1,16 @@
+{
+    "name": "Periodic Timer - bunch of timers in one app!",
+    "short_name": "PT",
+    "description": "Multiple types of timers and cronometers all in one app for easy access.",
+    "start_url": "/PeriodicTimer",
+    "theme_color": "#eeffee",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "egg-timer.svg",
+        "sizes": "512x512"
+      }
+    ]
+  }
+  
