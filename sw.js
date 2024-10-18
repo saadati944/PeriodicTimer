@@ -1,13 +1,40 @@
-const VERSION = "v1";
+const VERSION = "v2";
 const CACHE_NAME = `periodic-timer-${VERSION}`;
 
 const APP_STATIC_RESOURCES = [
   "/",
-  "/index.html",
+  "/back.svg",
+  "/chunk-2XH7BA5S.js",
+  "/chunk-3BG456MW.js",
+  "/chunk-4TQ2J6AN.js",
+  "/chunk-7R4RPOVL.js",
+  "/chunk-AEH2CUDJ.js",
+  "/chunk-AT7X73VS.js",
+  "/chunk-B43CU5JX.js",
+  "/chunk-F7XBNY6P.js",
+  "/chunk-FA25AEA4.js",
+  "/chunk-FPJE3T2B.js",
+  "/chunk-H4KPTBBH.js",
+  "/chunk-HBAE7HOK.js",
+  "/chunk-JHI3MBHO.js",
+  "/chunk-JURA3N6O.js",
+  "/chunk-K6L7EKAC.js",
+  "/chunk-LF5XB4YN.js",
+  "/chunk-MXXUIFLA.js",
+  "/chunk-NMYJD6OP.js",
+  "/chunk-NY7FVCUI.js",
+  "/chunk-QYULWRQI.js",
+  "/chunk-RJZ75WJA.js",
+  "/chunk-TAFVU7UN.js",
+  "/chunk-TQEIIVVC.js",
+  "/chunk-V7CXUA4R.js",
+  "/chunk-YHCUE55Z.js",
   "/egg-timer.svg",
-  "/main-K6QN3SFL.js",
+  "/favicon.ico",
+  "/index.html",
+  "/main-HB5X2GH7.js",
   "/polyfills-FFHMD2TL.js",
-  "/styles-5INURTSO.css"
+  "/styles-DQOEOQCN.css"
 ];
 
 self.addEventListener("install", (event) => {

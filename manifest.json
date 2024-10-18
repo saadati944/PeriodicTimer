@@ -9,7 +9,8 @@
     "icons": [
       {
         "src": "egg-timer.svg",
-        "sizes": "512x512"
+        "sizes": "any",
+        "purpose": "maskable"
       }
     ]
   }
