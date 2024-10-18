@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { IonButton, IonHeader, IonToolbar, IonCardHeader, IonButtons, IonBackButton, IonTitle, IonCard, IonCardTitle, IonCardContent, IonIcon } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-app-timer',
   standalone: true,
-  imports: [RouterModule],
+  imports: [IonIcon, IonButtons, IonCardHeader, RouterModule, IonHeader, IonToolbar, IonButton, IonBackButton, IonTitle, IonCard, IonCardTitle, IonCardContent ],
   templateUrl: './app-timer.component.html',
   styleUrl: './app-timer.component.css'
 })

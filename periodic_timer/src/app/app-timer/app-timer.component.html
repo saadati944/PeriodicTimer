@@ -1,10 +1,20 @@
-<div>
-<p>Simple Timer</p>
-<h1>{{timeString}}</h1>
-<div>
-    <button [disabled]="!isRunning" (click)="stop()">stop</button>
-    <button [disabled]="isRunning" (click)="start()">Start</button>
-</div>
-<hr/>
-<a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Back</a>
-</div>
+<ion-header>
+    <ion-toolbar>
+      <ion-button slot="start">
+        <ion-back-button default-href="#"></ion-back-button>
+      </ion-button>
+      <ion-title>Simple Timer</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-card class="ion-padding">
+    <ion-card-header>
+        <ion-card-title>{{timeString}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+    </ion-card-content>
+    <div class="float-bottom">
+        <ion-button [disabled]="!isRunning" fill="{{isRunning ? 'solid' : 'outline'}}" (click)="stop()">Stop</ion-button>
+        <ion-button [disabled]="isRunning" fill="{{!isRunning ? 'solid' : 'outline'}}" (click)="start()">Start</ion-button>
+    </div>
+</ion-card>

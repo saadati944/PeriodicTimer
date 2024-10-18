@@ -1,6 +1,18 @@
-<p>Choose your beloved timer type</p>
-<ul>
-    <li>
-        <a routerLink="/simple_timer" routerLinkActive="active" ariaCurrentWhenActive="page">Simple Timer</a>
-    </li>
-</ul>
+<ion-header>
+    <ion-toolbar>
+    <ion-title>
+        PeriodicTimer
+    </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-list>
+    <ion-list-header>
+    <ion-label>Choose a timer!</ion-label>
+    </ion-list-header>
+    <ion-item>
+        <a routerLink="/simple_timer" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <ion-label>Simple Timer</ion-label>
+        </a>
+    </ion-item>
+</ion-list>
