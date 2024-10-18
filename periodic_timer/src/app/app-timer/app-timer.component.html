@@ -1,0 +1,10 @@
+<div>
+<p>Simple Timer</p>
+<h1>{{timeString}}</h1>
+<div>
+    <button [disabled]="!isRunning" (click)="stop()">stop</button>
+    <button [disabled]="isRunning" (click)="start()">Start</button>
+</div>
+<hr/>
+<a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Back</a>
+</div>
