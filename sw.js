@@ -1,4 +1,4 @@
-const VERSION = "v6";
+const VERSION = "v7";
 const CACHE_NAME = `periodic-timer-${VERSION}`;
 const ENABLE_DYNAMIC_CACHING = false;
 
