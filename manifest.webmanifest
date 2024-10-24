@@ -9,17 +9,17 @@
     "icons": [
         {
             "src": "/PeriodicTimer/egg-timer-large.png",
-            "sizez": "660x660",
+            "sizes": "660x660",
             "purpose": "maskable"
         },
         {
             "src": "/PeriodicTimer/egg-timer-medium.png",
-            "sizez": "330x330",
+            "sizes": "330x330",
             "purpose": "maskable"
         },
         {
             "src": "/PeriodicTimer/egg-timer-small.png",
-            "sizez": "165x165",
+            "sizes": "165x165",
             "purpose": "maskable"
         },
         {
@@ -29,7 +29,7 @@
         },
         {
             "src": "/PeriodicTimer/favicon.ico",
-            "sizez": "32x32"
+            "sizes": "32x32"
         }
     ]
 }
