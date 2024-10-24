@@ -1,4 +1,4 @@
-const VERSION = "v4";
+const VERSION = "v5";
 const CACHE_NAME = `periodic-timer-${VERSION}`;
 
 const APP_STATIC_RESOURCES = [
@@ -32,6 +32,7 @@ const APP_STATIC_RESOURCES = [
   "/PeriodicTimer/egg-timer.svg",
   "/PeriodicTimer/favicon.ico",
   "/PeriodicTimer/index.html",
+  "/PeriodicTimer/manifest.json",
   "/PeriodicTimer/main-HB5X2GH7.js",
   "/PeriodicTimer/polyfills-FFHMD2TL.js",
   "/PeriodicTimer/styles-DQOEOQCN.css"
