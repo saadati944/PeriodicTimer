@@ -36,7 +36,7 @@ const APP_STATIC_RESOURCES = [
   "/PeriodicTimer/egg-timer-small.png",
   "/PeriodicTimer/favicon.ico",
   "/PeriodicTimer/index.html",
-  "/PeriodicTimer/manifest.json",
+  "/PeriodicTimer/manifest.webmanifest",
   "/PeriodicTimer/main-HB5X2GH7.js",
   "/PeriodicTimer/polyfills-FFHMD2TL.js",
   "/PeriodicTimer/styles-DQOEOQCN.css"
