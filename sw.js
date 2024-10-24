@@ -1,5 +1,6 @@
-const VERSION = "v5";
+const VERSION = "v6";
 const CACHE_NAME = `periodic-timer-${VERSION}`;
+const ENABLE_DYNAMIC_CACHING = false;
 
 const APP_STATIC_RESOURCES = [
   "/PeriodicTimer",
@@ -64,19 +65,32 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  if (event.request.mode === "navigate") {
-    event.respondWith(caches.match("/"));
+  if (event.request.method != 'GET')
     return;
-  }
 
-  event.respondWith(
-    (async () => {
-      const cache = await caches.open(CACHE_NAME);
-      const cachedResponse = await cache.match(event.request.url);
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-      return new Response(null, { status: 404 });
-    })(),
-  );
+  // if (event.request.mode === "navigate") {
+  //   event.respondWith(caches.match("/"));
+  //   return;
+  // }
+
+  event.respondWith((async () => {
+    const cachedResponse = await caches.match(event.request);
+    if (cachedResponse) {
+      return cachedResponse;
+    }
+  
+    const response = await fetch(event.request);
+  
+    if (!response || response.status !== 200 || response.type !== 'basic') {
+      return response;
+    }
+  
+    if (ENABLE_DYNAMIC_CACHING) {
+      const responseToCache = response.clone();
+      const cache = await caches.open(DYNAMIC_CACHE)
+      await cache.put(event.request, response.clone());
+    }
+  
+    return response;
+  })());
 });
