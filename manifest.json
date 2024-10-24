@@ -3,15 +3,33 @@
     "short_name": "Periodic Timer",
     "description": "Multiple types of timers and cronometers all in one app for easy access.",
     "start_url": "/PeriodicTimer",
-    "theme_color": "#eeffee",
+    "theme_color": "#7fa8f3",
     "background_color": "#ffffff",
     "display": "standalone",
     "icons": [
-      {
-        "src": "egg-timer.svg",
-        "sizes": "any",
-        "purpose": "maskable"
-      }
+        {
+            "src": "/PeriodicTimer/egg-timer-large.png",
+            "sizez": "660x660",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/PeriodicTimer/egg-timer-medium.png",
+            "sizez": "330x330",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/PeriodicTimer/egg-timer-small.png",
+            "sizez": "165x165",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/PeriodicTimer/egg-timer.svg",
+            "sizes": "any",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/PeriodicTimer/favicon.ico",
+            "sizez": "32x32"
+        }
     ]
-  }
-  
+}
